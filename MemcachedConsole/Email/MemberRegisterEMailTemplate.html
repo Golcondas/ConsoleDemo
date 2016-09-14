@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script type="text/javascript">
+    window.onload = function () {
+        var date = new Date();
+        document.getElementById("yearNow").innerText = date.getFullYear();
+    }
+    </script>
+
+</head>
+<body>
+    <h1>注册确认信</h1>
+    <p>亲爱的{{Name}}您好：</p>
+    <p>
+        由于您在{{RegisterOn}}注册成为本站会员，为了完成会员注册程序，我们请您点击以下链接一确认您的额Email地址是有效的:
+         <a href="{{AUTH_URL}}" target="_blank">{{AUTH_URL}}</a>
+    </p>
+    <br />
+    <p>
+        谢谢
+    </p>
+    <p>
+        Copyright ©<span id="yearNow"></span> 唐小僧企业理财
+    </p>
+</body>
+
+</html>

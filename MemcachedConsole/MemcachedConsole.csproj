@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1DCCDB9-E073-416F-B30A-497051B3F2CB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemcachedConsole</RootNamespace>
+    <AssemblyName>MemcachedConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Commons, Version=0.4.2.8580, Culture=neutral, PublicKeyToken=44382d1b57473eda">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IIFoxLibrary">
+      <HintPath>DLL\IIFoxLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Madison.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Madison.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Memcached.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\RSAKeyConvert.cs" />
+    <Compile Include="Common\RSACreateKey.cs" />
+    <Compile Include="Common\EnumConvertToList.cs" />
+    <Compile Include="Common\ExtendMethod.cs" />
+    <Compile Include="Common\NumberConert.cs" />
+    <Compile Include="Common\RSACryptoService.cs" />
+    <Compile Include="Common\TestEnum.cs" />
+    <Compile Include="Email\Email.cs" />
+    <Compile Include="Memcached\Memcached.cs" />
+    <Compile Include="Openssld的RSA生成秘钥和公钥\openssl_dos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\bin\private_key.pem" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\bin\rsa_private_key.pem" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\bin\rsa_public_key.crt" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\bin\temp.ans" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\lib\libeay32.lib" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\lib\ssleay32.lib" />
+    <None Include="Openssld的RSA生成秘钥和公钥\openssl\openssl.cnf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Commons.dll" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\Madison.Core.dll" />
+    <Content Include="DLL\Memcached.ClientLibrary.dll" />
+    <Content Include="Email\MemberRegisterEMailTemplate.html" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\bin\libeay32.dll" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\bin\openssl.exe" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\bin\ssleay32.dll" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\aes.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\applink.c" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\asn1.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\asn1t.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\asn1_mac.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\bio.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\blowfish.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\bn.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\buffer.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\cast.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\comp.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\conf.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\conf_api.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\crypto.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\des.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\des_old.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\dh.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\dsa.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\dso.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\dtls1.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ebcdic.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ec.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ecdh.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ecdsa.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\engine.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\err.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\evp.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\e_os2.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\hmac.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\idea.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\krb5_asn.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\kssl.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\lhash.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\md2.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\md4.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\md5.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\objects.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\obj_mac.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ocsp.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\opensslconf.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\opensslv.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ossl_typ.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pem.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pem2.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pkcs12.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pkcs7.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pqueue.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\pq_compat.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\rand.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\rc2.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\rc4.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ripemd.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\rsa.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\safestack.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\sha.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ssl.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ssl2.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ssl23.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ssl3.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\stack.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\store.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\symhacks.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\tls1.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\tmdiff.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\txt_db.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ui.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\ui_compat.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\x509.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\x509v3.h" />
+    <Content Include="Openssld的RSA生成秘钥和公钥\openssl\include\openssl\x509_vfy.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

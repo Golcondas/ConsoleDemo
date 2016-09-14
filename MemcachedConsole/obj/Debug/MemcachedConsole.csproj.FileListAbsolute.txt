@@ -1,0 +1,14 @@
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\MemcachedConsole.exe.config
+D:\MyStudy\MemcachedConsole\MemcachedConsole\obj\Debug\MemcachedConsole.csprojResolveAssemblyReference.cache
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\MemcachedConsole.exe
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\MemcachedConsole.pdb
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\Commons.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\log4net.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\Memcached.ClientLibrary.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\obj\Debug\MemcachedConsole.exe
+D:\MyStudy\MemcachedConsole\MemcachedConsole\obj\Debug\MemcachedConsole.pdb
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\Madison.Core.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\Newtonsoft.Json.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\BouncyCastle.Crypto.dll
+D:\MyStudy\MemcachedConsole\MemcachedConsole\bin\Debug\IIFoxLibrary.dll
