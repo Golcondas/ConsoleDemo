@@ -34,5 +34,4 @@ _ReSharper/
 *.[Pp]ublish.xml
 App_Data/
 TEMP/
-/node_modules
-/TruBluTravelling.Web/downloads
+!/Openssld的RSA生成秘钥和公钥
