@@ -38,3 +38,15 @@ E:\Git\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\IIFoxLibrary.dll
 E:\Git\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\log4net.dll
 E:\Git\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\Madison.Core.dll
 E:\Git\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\Memcached.ClientLibrary.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\MemcachedConsole.exe.config
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\MemcachedConsole.exe
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\MemcachedConsole.pdb
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\BouncyCastle.Crypto.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\Commons.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\IIFoxLibrary.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\log4net.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\bin\Debug\Memcached.ClientLibrary.dll
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\obj\Debug\MemcachedConsole.exe
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\obj\Debug\MemcachedConsole.pdb
+D:\GitHub\Demo\ConsoleDemo\MemcachedConsole\obj\Debug\MemcachedConsole.csprojResolveAssemblyReference.cache
