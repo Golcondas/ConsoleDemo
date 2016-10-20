@@ -85,11 +85,11 @@ namespace WinSocket
 
                 NetworkStream ns = client.GetStream();
                 if (ns.CanWrite) {
-                    //JavaScriptSerializer serial = new JavaScriptSerializer();
-                    //string context = serial.Serialize(cdm);
-                    //Byte[] sendBytes = Encoding.UTF8.GetBytes(context);
-                    //ns.Write(sendBytes, 0, sendBytes.Length);
-                    //ns.
+                    JavaScriptSerializer serial = new JavaScriptSerializer();
+                    string context = serial.Serialize(cdm);
+                    Byte[] sendBytes = Encoding.UTF8.GetBytes(context);
+                    ns.Write(sendBytes, 0, sendBytes.Length);
+
                 }
 
 
